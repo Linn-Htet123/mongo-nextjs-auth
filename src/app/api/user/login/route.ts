@@ -7,6 +7,7 @@ connect();
 export async function POST(request: NextRequest) {
   try {
     const reqBody = await request.json();
+    console.log(reqBody);
     const { email, password } = reqBody;
 
     //check if user exists
